@@ -61,9 +61,6 @@ public:
 
     bool IntoView(D3DXVECTOR3 Vec, float rad);  //物体が視野に入っているかチェック
 
-protected:
-    
-
 private:
     D3DXMATRIX m_mtxView;                       //ビュー行列
     D3DXVECTOR3 m_posAt;                        //注視点

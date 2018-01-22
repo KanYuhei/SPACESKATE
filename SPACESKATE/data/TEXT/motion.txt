@@ -29,84 +29,78 @@ MODEL_FILENAME = data/MODEL/09_Robo_foot_R.x    # [9]右足
 # キャラクター情報
 #------------------------------------------------------------------------------
 CHARACTERSET
-	NUM_PARTS = 11					# パーツ数
+	NUM_PARTS = 10					# パーツ数
 
 	PARTSSET
 		INDEX = 0					# 体
 		PARENT = -1					# (親)NULL
-		POS = 0.0 30.0 0.0
+		POS = 0.0 10.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
 		INDEX = 1					# 頭
 		PARENT = 0					# (親)体
-		POS = 0.0 20.0 0.0
+		POS = 0.0 35.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 2					# 右腕
+		INDEX = 2					# 左腕
 		PARENT = 0					# (親)体
-		POS = -7.5 12.0 0.0
+		POS = 9.0 30.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 3					# 右手
+		INDEX = 3					# 左手
 		PARENT = 2					# (親)右腕
-		POS = -12.0 2.5 0.0
+		POS = 15.0 2.5 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 4					# 左腕
+		INDEX = 4					# 右腕
 		PARENT = 0					# (親)体
-		POS = 7.5 12.0 0.0
+		POS = -9.0 30.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 5					# 左手
+		INDEX = 5					# 右手
 		PARENT = 4					# (親)左腕
-		POS = 12.0 2.5 0.0
+		POS = -15.0 0.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 6					# 右腿
+		INDEX = 6					# 左腿
 		PARENT = 0					# (親)体
-		POS = -4.0 0.0 0.0
+		POS = 6.0 6.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 7					# 右足
+		INDEX = 7					# 左足
 		PARENT = 6					# (親)右腿
-		POS = 0.0 -20.0 0.0
+		POS = 1.5 -20.0 -1.5
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 8					# 左腿
+		INDEX = 8					# 右腿
 		PARENT = 0					# (親)体
-		POS = 4.0 0.0 0.0
+		POS = -6.0 6.0 0.0
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
 	PARTSSET
-		INDEX = 9					# 左足
+		INDEX = 9					# 右足
 		PARENT = 8					# (親)左腿
-		POS = 0.0 -20.0 0.0
+		POS = -1.5 -20.0 -1.5
 		ROT = 0.0 0.0 0.0
 	END_PARTSSET
 
-	PARTSSET
-		INDEX = 10					# 腰
-		PARENT = 0					# (親)体
-		POS = 0.0 5.0 0.0
-		ROT = 0.0 0.0 0.0
-	END_PARTSSET
 END_CHARACTERSET
 
 #------------------------------------------------------------------------------

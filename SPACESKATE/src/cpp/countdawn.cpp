@@ -124,7 +124,7 @@ void CCountdawn::Update(void)
     m_CountDawnStart++;
     if (m_CountDawnStart == 200)
     {
-        CManager::GetSound()->Play(CSound::SOUND_LAVEL_SE_COUNTDAWN);
+        CManager::GetSound()->Play(CSound::SOUND_LABEL_SE_COUNTDAWN);
         m_bCount = true;
     }
     if (m_CountDawnStart >= 200)
@@ -148,12 +148,12 @@ void CCountdawn::Update(void)
             m_ColorA = 1.0f;
             if (m_CountDawn == 0)
             {
-                CManager::GetSound()->Play(CSound::SOUND_LAVEL_SE_START);
+                CManager::GetSound()->Play(CSound::SOUND_LABEL_SE_START);
                 m_bCount = false;
             }
             else
             {
-                CManager::GetSound()->Play(CSound::SOUND_LAVEL_SE_COUNTDAWN);
+                CManager::GetSound()->Play(CSound::SOUND_LABEL_SE_COUNTDAWN);
             }
         }
         else if (m_ColorA <= 0.0f)

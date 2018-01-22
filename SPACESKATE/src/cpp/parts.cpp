@@ -103,11 +103,11 @@ void CParts::Uninit(void)
 //*************************************************************************************************
 // 自身を生成
 //*************************************************************************************************
-CParts *CParts::Create(std::string fileName, D3DXVECTOR3 pos, D3DXVECTOR3 rot, CParts *parent)
+CParts *CParts::Create(char fileName[256], D3DXVECTOR3 pos, D3DXVECTOR3 rot, CParts *parent)
 {
     CParts *pParts;
     pParts = new CParts();
-    pParts->m_FileName = fileName;
+    strcpy(pParts->m_FileName, fileName);
     pParts->m_Position = pos;
     pParts->m_Rotation = rot;
     pParts->m_Parent = parent;

@@ -13,13 +13,13 @@
 //*************************************************************************************************
 // マクロ定義 
 //*************************************************************************************************
-#define TEXTURENAME00 "data/TEXTURE/skybox003.jpg"                                  //読み込むテクスチャの名前
-#define TEXTURENAME01 "data/TEXTURE/skyBox/skybox_BlueWithPlanet/frontImage.png"    //読み込むテクスチャの名前
-#define TEXTURENAME02 "data/TEXTURE/skyBox/skybox_BlueWithPlanet/leftImage.png"     //読み込むテクスチャの名前
-#define TEXTURENAME03 "data/TEXTURE/skyBox/skybox_BlueWithPlanet/backImage.png"     //読み込むテクスチャの名前
-#define TEXTURENAME04 "data/TEXTURE/skyBox/skybox_BlueWithPlanet/rightImage.png"    //読み込むテクスチャの名前
-#define TEXTURENAME05 "data/TEXTURE/skyBox/skybox_BlueWithPlanet/upImage.png"       //読み込むテクスチャの名前
-#define TEXTURENAME06 "data/TEXTURE/skyBox/skybox_BlueWithPlanet/downImage.png"     //読み込むテクスチャの名前
+#define TEXTURENAME00 "data/TEXTURE/GAME/skybox003.jpg"                                  //読み込むテクスチャの名前
+#define TEXTURENAME01 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/frontImage.png"    //読み込むテクスチャの名前
+#define TEXTURENAME02 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/leftImage.png"     //読み込むテクスチャの名前
+#define TEXTURENAME03 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/backImage.png"     //読み込むテクスチャの名前
+#define TEXTURENAME04 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/rightImage.png"    //読み込むテクスチャの名前
+#define TEXTURENAME05 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/upImage.png"       //読み込むテクスチャの名前
+#define TEXTURENAME06 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/downImage.png"     //読み込むテクスチャの名前
 
 //*************************************************************************************************
 // 構造体

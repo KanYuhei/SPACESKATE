@@ -73,6 +73,8 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\</OutDir>
     <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -81,6 +83,8 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\</OutDir>
     <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -94,7 +98,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\tidus\Desktop\SPACESKATE\src\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -125,7 +129,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\tidus\Desktop\SPACESKATE\src\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -245,6 +249,145 @@
     <ClInclude Include="src\h\sound.h" />
     <ClInclude Include="src\h\time.h" />
     <ClInclude Include="src\h\track.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="data\SOUND\BGM\game.wav" />
+    <Media Include="data\SOUND\BGM\result.wav" />
+    <Media Include="data\SOUND\BGM\title.wav" />
+    <Media Include="data\SOUND\SE\coutdawn.wav" />
+    <Media Include="data\SOUND\SE\enter.wav" />
+    <Media Include="data\SOUND\SE\goal.wav" />
+    <Media Include="data\SOUND\SE\item.wav" />
+    <Media Include="data\SOUND\SE\start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\TEXT\item.txt" />
+    <Text Include="data\TEXT\model.txt" />
+    <Text Include="data\TEXT\motion.txt" />
+    <Text Include="data\TEXT\motionAKR.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\MODEL\00_body.x" />
+    <None Include="data\MODEL\00_RoboBlue_body.x" />
+    <None Include="data\MODEL\00_Robo_body.x" />
+    <None Include="data\MODEL\01_head.x" />
+    <None Include="data\MODEL\01_RoboBlue_head.x" />
+    <None Include="data\MODEL\01_Robo_head.x" />
+    <None Include="data\MODEL\02_arm_L.x" />
+    <None Include="data\MODEL\02_RoboBlue_arm_L.x" />
+    <None Include="data\MODEL\02_Robo_arm_L.x" />
+    <None Include="data\MODEL\03_hand_L.x" />
+    <None Include="data\MODEL\03_RoboBlue_hand_L.x" />
+    <None Include="data\MODEL\03_Robo_hand_L.x" />
+    <None Include="data\MODEL\04_arm_R.x" />
+    <None Include="data\MODEL\04_RoboBlue_arm_R.x" />
+    <None Include="data\MODEL\04_Robo_arm_R.x" />
+    <None Include="data\MODEL\05_hand_R.x" />
+    <None Include="data\MODEL\05_RoboBlue_hand_R.x" />
+    <None Include="data\MODEL\05_Robo_hand_R.x" />
+    <None Include="data\MODEL\06_leg_L.x" />
+    <None Include="data\MODEL\06_RoboBlue_leg_L.x" />
+    <None Include="data\MODEL\06_Robo_leg_L.x" />
+    <None Include="data\MODEL\07_foot_L.x" />
+    <None Include="data\MODEL\07_RoboBlue_foot_L.x" />
+    <None Include="data\MODEL\07_Robo_foot_L.x" />
+    <None Include="data\MODEL\08_leg_R.x" />
+    <None Include="data\MODEL\08_RoboBlue_leg_R.x" />
+    <None Include="data\MODEL\08_Robo_leg_R.x" />
+    <None Include="data\MODEL\09_foot_R.x" />
+    <None Include="data\MODEL\09_RoboBlue_foot_R.x" />
+    <None Include="data\MODEL\09_Robo_foot_R.x" />
+    <None Include="data\MODEL\airplane000.x" />
+    <None Include="data\MODEL\ball.x" />
+    <None Include="data\MODEL\column.x" />
+    <None Include="data\MODEL\cube.mqo" />
+    <None Include="data\MODEL\cube.x" />
+    <None Include="data\MODEL\dice000.x" />
+    <None Include="data\MODEL\Eagle.x" />
+    <None Include="data\MODEL\flypan.x" />
+    <None Include="data\MODEL\glass.mqo" />
+    <None Include="data\MODEL\glass.x" />
+    <None Include="data\MODEL\hikouki.x" />
+    <None Include="data\MODEL\kurisutaru.mqo" />
+    <None Include="data\MODEL\kurisutaru.x" />
+    <None Include="data\MODEL\player2.x" />
+    <None Include="data\MODEL\road.mqo" />
+    <None Include="data\MODEL\road.x" />
+    <None Include="data\MODEL\robot.x" />
+    <None Include="data\MODEL\roboto.mqo" />
+    <None Include="data\MODEL\roboto2.mqo" />
+    <None Include="data\MODEL\taki.x" />
+    <None Include="data\MODEL\track.x" />
+    <None Include="data\MODEL\trackColision.x" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\TEXTURE\bar.png" />
+    <Image Include="data\TEXTURE\fade.jpg" />
+    <Image Include="data\TEXTURE\GAME\field\ground2.jpg" />
+    <Image Include="data\TEXTURE\GAME\rankingNum.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\backImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\downImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\frontImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\leftImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\rightImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\upImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\backImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\downImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\frontImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\leftImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\rightImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\upImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\backImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\downImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\frontImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\leftImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\rightImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\upImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\backImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\downImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\frontImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\leftImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\rightImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\upImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\backImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\downImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\frontImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\leftImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\rightImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\upImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\backImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\downImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\frontImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\leftImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\rightImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\upImage.png" />
+    <Image Include="data\TEXTURE\GAME\skyDome\sky000.jpg" />
+    <Image Include="data\TEXTURE\GAME\skyDome\sky001.jpg" />
+    <Image Include="data\TEXTURE\GAME\skyDome\sky002.jpg" />
+    <Image Include="data\TEXTURE\GAME\skyDome\sky003.jpg" />
+    <Image Include="data\TEXTURE\GAME\skyDome\sky004.jpg" />
+    <Image Include="data\TEXTURE\GAME\TIME.png" />
+    <Image Include="data\TEXTURE\GAME\Timedabule.png" />
+    <Image Include="data\TEXTURE\GAME\Timedot.png" />
+    <Image Include="data\TEXTURE\GAME\wall.jpg" />
+    <Image Include="data\TEXTURE\gear.png" />
+    <Image Include="data\TEXTURE\Glass_Cockpit.png" />
+    <Image Include="data\TEXTURE\GO.png" />
+    <Image Include="data\TEXTURE\goal.png" />
+    <Image Include="data\TEXTURE\kurisutaru.jpeg" />
+    <Image Include="data\TEXTURE\num.png" />
+    <Image Include="data\TEXTURE\num2.png" />
+    <Image Include="data\TEXTURE\num3.png" />
+    <Image Include="data\TEXTURE\Photo.jpg" />
+    <Image Include="data\TEXTURE\Photo2.jpg" />
+    <Image Include="data\TEXTURE\Pilot_usa.png" />
+    <Image Include="data\TEXTURE\pressanybutton.png" />
+    <Image Include="data\TEXTURE\reinbo.png" />
+    <Image Include="data\TEXTURE\result.jpg" />
+    <Image Include="data\TEXTURE\result.png" />
+    <Image Include="data\TEXTURE\road_stone.jpg" />
+    <Image Include="data\TEXTURE\shadow000.jpg" />
+    <Image Include="data\TEXTURE\TITLE\spaceskate.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

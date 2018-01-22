@@ -158,7 +158,7 @@ HRESULT CModeGame::Init( void )
                      D3DXCOLOR(1.0f,1.0f,1.0f,1.0f));
 
     //シーン2Dクラスの生成
-    CScene2D::Create("data/TEXTURE/TIME.png",
+    CScene2D::Create("data/TEXTURE/GAME/TIME.png",
         D3DXVECTOR3(SCREEN_WIDTH - ((SCREEN_WIDTH * 0.005f * 9) * 10), SCREEN_WIDTH * 0.005f, 0.0f),
         D3DXVECTOR3(SCREEN_WIDTH * 9 * 0.01079f, SCREEN_HEIGHT * 16 * 0.00401f, 0.0f),
         D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f),
@@ -167,7 +167,7 @@ HRESULT CModeGame::Init( void )
         4);
 
     //シーン2Dクラスの生成
-    CScene2D::Create("data/TEXTURE/Timedabule.png",
+    CScene2D::Create("data/TEXTURE/GAME/Timedabule.png",
         D3DXVECTOR3(SCREEN_WIDTH - ((SCREEN_WIDTH * 0.005f * 9) * 5.25f), SCREEN_WIDTH * 0.007f, 0.0f),
         D3DXVECTOR3(SCREEN_WIDTH * 9 * 0.00059f, SCREEN_HEIGHT * 16 * 0.00332f, 0.0f),
         D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f),
@@ -176,7 +176,7 @@ HRESULT CModeGame::Init( void )
         4);
 
     //シーン2Dクラスの生成
-    CScene2D::Create("data/TEXTURE/Timedot.png",
+    CScene2D::Create("data/TEXTURE/GAME/Timedot.png",
         D3DXVECTOR3(SCREEN_WIDTH - ((SCREEN_WIDTH * 0.005f * 9) * 3.15f), SCREEN_WIDTH * 0.03f, 0.0f),
         D3DXVECTOR3(SCREEN_WIDTH * 9 * 0.00059f, SCREEN_HEIGHT * 16 * 0.00108f, 0.0f),
         D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f),

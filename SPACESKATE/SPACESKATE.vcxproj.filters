@@ -91,6 +91,63 @@
     <Filter Include="ヘッダー ファイル\Scene\SceneModel\Player">
       <UniqueIdentifier>{d67f0073-0f6b-4231-9ba1-1db61e7392b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="リソース ファイル\MODEL">
+      <UniqueIdentifier>{7d494f9b-6797-43c1-bee2-e161c3d643ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXT">
+      <UniqueIdentifier>{5b86f572-05ff-4da6-80ac-a07138b0aca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE">
+      <UniqueIdentifier>{9854acd5-f2db-4b61-8657-9a22c79142a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\SOUND">
+      <UniqueIdentifier>{60595330-a31e-4054-a9a5-e81145cb4371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\SOUND\BGM">
+      <UniqueIdentifier>{a4a87e50-0f0e-4be9-9c12-f510e1394728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\SOUND\SE">
+      <UniqueIdentifier>{82d4dfdf-1c02-4f5f-9e54-fefc6d152664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\COMMON">
+      <UniqueIdentifier>{4b5aa4ee-08b2-4980-9146-bc26ed8693eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\TITLE">
+      <UniqueIdentifier>{7acd52a0-61f0-42af-bf03-f245f8eb0935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME">
+      <UniqueIdentifier>{89cbd005-0ee7-4314-8b01-ed72a0d1937c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\RESULT">
+      <UniqueIdentifier>{e078e612-74d6-4457-b613-77ab8a0d77a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\field">
+      <UniqueIdentifier>{87e3830c-59aa-43ab-ab99-d8c53ba427b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyDome">
+      <UniqueIdentifier>{71e3f187-71cf-4ea8-a77d-e6fbac4f4df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox">
+      <UniqueIdentifier>{a6bf0237-ba9c-4947-b97a-505b6d8fe2db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue">
+      <UniqueIdentifier>{e080ec72-2556-4106-a613-f9b3c5c15ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet">
+      <UniqueIdentifier>{99042f78-40b3-455e-9e66-252649cef721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green">
+      <UniqueIdentifier>{e297464f-f2f8-4ae5-b57d-e01fb18e2735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet">
+      <UniqueIdentifier>{61141118-a29f-4f21-a1f8-b59e506a0f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red">
+      <UniqueIdentifier>{b3d6735c-063d-477f-a447-127540ca1641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet">
+      <UniqueIdentifier>{85e49d8b-8ba6-4c0c-9ddf-2e08e64d930f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\cpp\manager.cpp">
@@ -362,5 +419,406 @@
     <ClInclude Include="src\h\scene.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="data\SOUND\BGM\game.wav">
+      <Filter>リソース ファイル\SOUND\BGM</Filter>
+    </Media>
+    <Media Include="data\SOUND\BGM\result.wav">
+      <Filter>リソース ファイル\SOUND\BGM</Filter>
+    </Media>
+    <Media Include="data\SOUND\BGM\title.wav">
+      <Filter>リソース ファイル\SOUND\BGM</Filter>
+    </Media>
+    <Media Include="data\SOUND\SE\coutdawn.wav">
+      <Filter>リソース ファイル\SOUND\SE</Filter>
+    </Media>
+    <Media Include="data\SOUND\SE\enter.wav">
+      <Filter>リソース ファイル\SOUND\SE</Filter>
+    </Media>
+    <Media Include="data\SOUND\SE\goal.wav">
+      <Filter>リソース ファイル\SOUND\SE</Filter>
+    </Media>
+    <Media Include="data\SOUND\SE\item.wav">
+      <Filter>リソース ファイル\SOUND\SE</Filter>
+    </Media>
+    <Media Include="data\SOUND\SE\start.wav">
+      <Filter>リソース ファイル\SOUND\SE</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\TEXT\item.txt">
+      <Filter>リソース ファイル\TEXT</Filter>
+    </Text>
+    <Text Include="data\TEXT\model.txt">
+      <Filter>リソース ファイル\TEXT</Filter>
+    </Text>
+    <Text Include="data\TEXT\motion.txt">
+      <Filter>リソース ファイル\TEXT</Filter>
+    </Text>
+    <Text Include="data\TEXT\motionAKR.txt">
+      <Filter>リソース ファイル\TEXT</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\MODEL\00_Robo_body.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\00_RoboBlue_body.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\01_head.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\01_Robo_head.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\01_RoboBlue_head.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\02_arm_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\02_Robo_arm_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\02_RoboBlue_arm_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\03_hand_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\03_Robo_hand_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\03_RoboBlue_hand_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\04_arm_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\04_Robo_arm_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\04_RoboBlue_arm_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\05_hand_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\05_Robo_hand_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\05_RoboBlue_hand_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\06_leg_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\06_Robo_leg_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\06_RoboBlue_leg_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\07_foot_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\07_Robo_foot_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\07_RoboBlue_foot_L.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\08_leg_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\08_Robo_leg_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\08_RoboBlue_leg_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\09_foot_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\09_Robo_foot_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\09_RoboBlue_foot_R.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\airplane000.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\ball.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\column.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\cube.mqo">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\cube.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\dice000.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\Eagle.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\flypan.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\glass.mqo">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\glass.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\hikouki.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\kurisutaru.mqo">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\kurisutaru.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\player2.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\road.mqo">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\road.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\robot.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\roboto.mqo">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\roboto2.mqo">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\taki.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\track.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\trackColision.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+    <None Include="data\MODEL\00_body.x">
+      <Filter>リソース ファイル\MODEL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\TEXTURE\TITLE\spaceskate.png">
+      <Filter>リソース ファイル\TEXTURE\TITLE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\bar.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\fade.jpg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\gear.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\Glass_Cockpit.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GO.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\goal.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\kurisutaru.jpeg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\num.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\num2.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\num3.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\Photo.jpg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\Photo2.jpg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\Pilot_usa.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\pressanybutton.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\reinbo.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\result.jpg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\result.png">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\road_stone.jpg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\shadow000.jpg">
+      <Filter>リソース ファイル\TEXTURE</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\field\ground2.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME\field</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyDome\sky000.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyDome</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyDome\sky001.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyDome</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyDome\sky002.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyDome</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyDome\sky003.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyDome</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyDome\sky004.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyDome</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\wall.jpg">
+      <Filter>リソース ファイル\TEXTURE\GAME</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\rankingNum.png">
+      <Filter>リソース ファイル\TEXTURE\GAME</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\TIME.png">
+      <Filter>リソース ファイル\TEXTURE\GAME</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\Timedabule.png">
+      <Filter>リソース ファイル\TEXTURE\GAME</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\Timedot.png">
+      <Filter>リソース ファイル\TEXTURE\GAME</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\upImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\backImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\downImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\frontImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\leftImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_Blue\rightImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_Blue</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\backImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\downImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\frontImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\leftImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\rightImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet\upImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skybox_BlueWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\upImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\backImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\downImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\frontImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\leftImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Green\rightImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Green</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\upImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\backImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\downImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\frontImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\leftImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet\rightImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_GreenWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\upImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\backImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\downImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\frontImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\leftImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_Red\rightImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_Red</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\upImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\backImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\downImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\frontImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\leftImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet</Filter>
+    </Image>
+    <Image Include="data\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet\rightImage.png">
+      <Filter>リソース ファイル\TEXTURE\GAME\skyBox\skyBox_RedWithPlanet</Filter>
+    </Image>
   </ItemGroup>
 </Project>

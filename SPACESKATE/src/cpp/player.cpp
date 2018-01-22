@@ -59,18 +59,6 @@ int CPlayer::m_ID;
 //*************************************************************************************************
 CPlayer::CPlayer ( int nPriority ):CSceneModel( SCENE_TYPE_PLAYER, nPriority )
 {
-    //パーツ情報の初期化
-    for (int part = 0; part < PART_MAX_NUM; part++)
-    {
-        m_Part[part].pMesh = NULL;
-        m_Part[part].pBuffMat = NULL;
-        for (int i = 0; i < MDEL_TEXTURE_NUM; i++)
-        {
-            m_Part[part].pTexture[i] = NULL;
-        }
-        m_Part[part].nNumMat = (DWORD)0;
-    }
-
     m_Rot = D3DXVECTOR3 ( 1.0f, 0.0f, 0.0f );
     m_Move = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
     m_Acceleration = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
@@ -97,7 +85,47 @@ HRESULT CPlayer::Init(void)
     //Direct3Dデバイスの取得
     LPDIRECT3DDEVICE9 pDevice = CRenderer::GetDevice();
 
-    char fileName[PART_MAX_NUM][256];
+    // ファイルの読み込み////////////////////////////////////////////////
+    FILE *pFile;
+    pFile = fopen("data/TEXT/motion.txt", "r");
+    if (pFile == NULL)
+    {
+        MessageBox(NULL, "プレイヤーモーションテキストの読み込みに失敗しました", "終了メッセージ", MB_OK);
+        return E_FAIL;
+    }
+
+    char str[256];                          //ファイルから読み込んだ文字列
+    char fileName[PART_MAX_NUM][256];       //モデルファイルネーム
+    int loadModel = 0;                      //読み込んだモデル数
+    D3DXVECTOR3 position;
+    D3DXVECTOR3 rotation;
+    CParts *pParts;
+
+    while (fgets(str, 256, pFile) != NULL) {
+        int end = strlen(str);              //１行の文字列の終端
+        char *end = strstr(str, "#");
+
+        //MODEL_FILENAMEが見つかった場合
+        if (strstr(str, "MODEL_FILENAME") != NULL)
+        {
+            strncpy(fileName[loadModel], strstr(str, "MODEL_FILENAME") + 3, end);
+            loadModel++;
+        }
+
+        //NUM_PARTSが見つかった場合
+        if (strstr(str, "NUM_PARTS") != NULL)
+        {
+        }
+
+        //INDEXが見つかった場合
+        if (strstr(str, "INDEX") != NULL)
+        {
+            pParts = 
+        }
+    }
+
+    fclose(pFile);
+
     if (CSocket::GetID() == 1)
     {
         sprintf(fileName[0], "data/MODEL/00_Robo_body.x" );      //（体）
@@ -125,35 +153,15 @@ HRESULT CPlayer::Init(void)
         sprintf(fileName[9], "data/MODEL/09_RoboBlue_foot_R.x");  //（右足）
     }
 
-    CParts parts;
-    LPD3DXMESH mesh;     
-    LPD3DXBUFFER buffMat;
-    DWORD numMat;
-    LPDIRECT3DTEXTURE9 m_Texture[PARTS_TEXTURE_NUM];
-    D3DXVECTOR3 position;
-    D3DXVECTOR3 rotation;
-    CParts *pParts;
-    
-    //体
-    D3DXLoadMeshFromX(fileName[0], D3DXMESH_MANAGED, pDevice, NULL, &buffMat, NULL, &numMat, &mesh);
-    position = D3DXVECTOR3(0.0f, 10.0f, 0.0f);
-    rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-    pParts = NULL;
-
-    //マテリアル情報バッファのポインタ取得
-    D3DXMATERIAL* pMat = (D3DXMATERIAL*)buffMat->GetBufferPointer();
-
-    //各マテリアル情報を保存
-    for (int j = 0; j < (int)numMat; j++)
+    // パーツの作成
+    for (int nCntPart = 0; nCntPart < PART_MAX_NUM; nCntPart++)
     {
-        if (pMat[j].pTextureFilename == NULL) continue;
+        fileName[nCntPart] = 
+        position = D3DXVECTOR3(0.0f, 10.0f, 0.0f);
+        rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
+        pParts = NULL;
 
-        //テクスチャの読み込み
-        if (FAILED(D3DXCreateTextureFromFile(pDevice, pMat[j].pTextureFilename, &m_Texture[j])))
-        {
-            MessageBox(NULL, "テクスチャの読み込みに失敗しました", "終了メッセージ", MB_OK);
-            return E_FAIL;
-        }
+        m_Part[nCntPart] = CParts::Create(fileName[nCntPart], position, rotation, pParts);
     }
 
     //頭
@@ -816,7 +824,7 @@ void CPlayer::Update(void)
             {
                 item->Release();
                 m_ItemNum++;
-                CManager::GetSound()->Play(CSound::SOUND_LAVEL_SE_ITEM);
+                CManager::GetSound()->Play(CSound::SOUND_LABEL_SE_ITEM);
             }
         }
         scene = scene->GetNext();
@@ -897,7 +905,7 @@ void CPlayer::Update(void)
 
             CSocket::SendData(data);
 
-            CManager::GetSound()->Play(CSound::SOUND_LAVEL_SE_GOAL);
+            CManager::GetSound()->Play(CSound::SOUND_LABEL_SE_GOAL);
             m_GoalEffect = true;
         }
     }

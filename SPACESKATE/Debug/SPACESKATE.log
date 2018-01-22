@@ -1,0 +1,353 @@
+﻿  track.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C3646: 'm_Part': 不明なオーバーライド指定子です
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ',' が '[' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ')' が ';' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2238: ';' の前に無効なトークンがあります。
+  time.cpp
+  sound.cpp
+  socket.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C3646: 'm_Part': 不明なオーバーライド指定子です
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ',' が '[' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ')' が ';' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2238: ';' の前に無効なトークンがあります。
+  sceneModel.cpp
+  scene3D.cpp
+  scene2D.cpp
+  scene.cpp
+  renderTarget2D.cpp
+  renderer.cpp
+  ranking.cpp
+  pressenter.cpp
+  playerload.cpp
+  player2.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C3646: 'm_Part': 不明なオーバーライド指定子です
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ',' が '[' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ')' が ';' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2238: ';' の前に無効なトークンがあります。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(54): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(54): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(55): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(55): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(58): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(58): error C2228: '.pTexture' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(60): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(60): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(113): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(113): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(113): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(113): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(113): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(114): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(114): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(115): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(115): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(116): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(116): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(119): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(119): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(119): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(119): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(119): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(120): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(120): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(121): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(121): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(122): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(122): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(125): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(125): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(125): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(125): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(125): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(126): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(126): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(127): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(127): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(128): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(128): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(131): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(131): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(131): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(131): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(131): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(132): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(132): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(133): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(133): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(134): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(134): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(137): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(137): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(137): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(137): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(137): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(138): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(138): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(139): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(139): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(140): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(140): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(143): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(143): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(143): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(143): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(143): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(144): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(144): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(145): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(145): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(146): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(146): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(149): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(149): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(149): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(149): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(149): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(150): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(150): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(151): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(151): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(152): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(152): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(155): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(155): error C2228: '.pBuffMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(155): error C2228: '.nNumMat' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(155): error C2228: '.pMesh' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(155): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(156): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(156): error C2228: '.Position' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(157): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(157): error C2228: '.Rotation' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(158): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(158): error C2228: '.Parent' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(161): error C2065: 'm_Part': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player2.cpp(161): fatal error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。
+  player.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C3646: 'm_Part': 不明なオーバーライド指定子です
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ',' が '[' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ')' が ';' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2238: ';' の前に無効なトークンがあります。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(65): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(66): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(69): error C2039: 'pTexture': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(71): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(160): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(160): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(160): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(160): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(161): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(162): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(163): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(166): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(166): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(166): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(166): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(167): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(168): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(169): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(172): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(172): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(172): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(172): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(173): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(174): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(175): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(178): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(178): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(178): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(178): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(179): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(180): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(181): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(184): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(184): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(184): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(184): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(185): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(186): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(187): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(190): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(190): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(190): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(190): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(191): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(192): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(193): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(196): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(196): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(196): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(196): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(197): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(198): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(199): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(202): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(202): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(202): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(202): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(203): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(204): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(205): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(208): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(208): error C2039: 'nNumMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(208): error C2039: 'pMesh': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(208): error C2660: 'D3DXLoadMeshFromXA': 関数に 5 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(209): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(210): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(211): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(645): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(646): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(819): error C2039: 'SOUND_LAVEL_SE_ITEM': 'CSound' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\sound.h(25): note: 'CSound' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(819): error C2065: 'SOUND_LAVEL_SE_ITEM': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(891): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(900): error C2039: 'SOUND_LAVEL_SE_GOAL': 'CSound' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\sound.h(25): note: 'CSound' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(900): error C2065: 'SOUND_LAVEL_SE_GOAL': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(956): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(962): error C2039: 'Rotation': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(962): error C2228: '.y' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(962): error C2228: '.x' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(962): error C2228: '.z' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(962): error C2660: 'D3DXMatrixRotationYawPitchRoll': 関数に 1 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(965): error C2039: 'Position': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(965): error C2228: '.x' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(965): error C2228: '.y' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(965): error C2228: '.z' の左側はクラス、構造体、共用体でなければなりません
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(965): error C2660: 'D3DXMatrixTranslation': 関数に 1 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(968): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(969): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(970): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(973): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(975): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(975): error C2660: 'D3DXMatrixMultiply': 関数に 2 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(979): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(979): error C2039: 'Parent': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(979): error C2227: '->Matrix' : 左側がクラス、構造体、共用体、ジェネリック型へのポインターではありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(979): error C2660: 'D3DXMatrixMultiply': 関数に 1 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(983): error C2039: 'Matrix': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(983): error C2660: 'IDirect3DDevice9::SetTransform': 関数に 1 個の引数を指定できません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(986): error C2039: 'pBuffMat': 'CParts' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player.h(51): note: 'CParts' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\player.cpp(986): fatal error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。
+  parts.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\parts.cpp(72): error C2664: 'HRESULT D3DXLoadMeshFromXA(LPCSTR,DWORD,LPDIRECT3DDEVICE9,LPD3DXBUFFER *,LPD3DXBUFFER *,LPD3DXBUFFER *,DWORD *,LPD3DXMESH *)': 引数 1 を 'std::string' から 'LPCSTR' へ変換できません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\parts.cpp(72): note: この変換を実行可能なユーザー定義変換演算子がないか、または演算子を呼び出せません。
+  particle.cpp
+  obb.cpp
+  number.cpp
+  mouse.cpp
+  コードを生成中...
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\playerload.cpp(38): error C4716: 'CPlayerLoad::Load': 値を返さなければいけません
+  コンパイル中...
+  monitor.cpp
+  modeTitle.cpp
+  modeResult.cpp
+  modeGame.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C3646: 'm_Part': 不明なオーバーライド指定子です
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ',' が '[' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2143: 構文エラー: ')' が ';' の前にありません。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\h\player2.h(59): error C2238: ';' の前に無効なトークンがあります。
+  mode.cpp
+  meshWall.cpp
+  meshField.cpp
+  meshEffect.cpp
+  meshDome.cpp
+  meshBox.cpp
+  manager.cpp
+  main.cpp
+  line3D.cpp
+  light.cpp
+  keyboard.cpp
+  joystick.cpp
+  item.cpp
+  input.cpp
+  gear.cpp
+  emitter.cpp
+  コードを生成中...
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\manager.cpp(360): warning C4715: 'CManager::GetPlayerTime': 値を返さないコントロール パスがあります。
+  コンパイル中...
+  countdawn.cpp
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\countdawn.cpp(127): error C2039: 'SOUND_LAVEL_SE_COUNTDAWN': 'CSound' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\sound.h(25): note: 'CSound' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\countdawn.cpp(127): error C2065: 'SOUND_LAVEL_SE_COUNTDAWN': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\countdawn.cpp(151): error C2039: 'SOUND_LAVEL_SE_START': 'CSound' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\sound.h(25): note: 'CSound' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\countdawn.cpp(151): error C2065: 'SOUND_LAVEL_SE_START': 定義されていない識別子です。
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\countdawn.cpp(156): error C2039: 'SOUND_LAVEL_SE_COUNTDAWN': 'CSound' のメンバーではありません。
+  c:\users\tidus\desktop\spaceskate\spaceskate\src\h\sound.h(25): note: 'CSound' の宣言を確認してください
+c:\users\tidus\desktop\spaceskate\spaceskate\src\cpp\countdawn.cpp(156): error C2065: 'SOUND_LAVEL_SE_COUNTDAWN': 定義されていない識別子です。
+  columncpp.cpp
+  colision.cpp
+  camera.cpp
+  コードを生成中...

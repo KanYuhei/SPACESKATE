@@ -1,2 +1,0 @@
-# SPACESKATE
-就職作品『SPACESKATE』個人作品

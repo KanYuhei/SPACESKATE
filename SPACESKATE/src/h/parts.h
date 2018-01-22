@@ -8,7 +8,6 @@
 //*************************************************************************************************
 // インクルードファイル
 //*************************************************************************************************
-#include <string>
 
 //*************************************************************************************************
 // マクロ定義 
@@ -32,13 +31,13 @@ public:
     HRESULT Init(void);                             //初期化処理
     void Uninit(void);                              //終了処理
 
-    CParts *Create(std::string fileName,
+    CParts *Create(char fileName[256],
                    D3DXVECTOR3 pos,
                    D3DXVECTOR3 rot,
                    CParts *parent);                //自身を生成
 
 private:
-    std::string m_FileName;                         //ファイル名
+    char m_FileName[256];                           //ファイル名
     LPD3DXMESH m_Mesh;                              //メッシュ情報インターフェース
     LPD3DXBUFFER m_BuffMat;                         //マテリアル情報
     DWORD m_NumMat;                                 //マテリアル情報の数

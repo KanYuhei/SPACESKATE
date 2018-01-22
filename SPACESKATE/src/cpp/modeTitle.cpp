@@ -92,7 +92,7 @@ HRESULT CModeTitle::Init( void )
         D3DXVECTOR3(1.0f, 1.0f, 1.0f));
 
     //シーン2Dクラスの生成
-    CScene2D::Create ( "data/TEXTURE/spaceskate.png",
+    CScene2D::Create ( "data/TEXTURE/TITLE/spaceskate.png",
                        D3DXVECTOR3 ((SCREEN_WIDTH - (SCREEN_WIDTH * 9.0f * 0.065f)) / 2.0f, (SCREEN_HEIGHT - (SCREEN_HEIGHT * 16.0f * 0.0149f)) / 4.0f, 0.0f ),
                        D3DXVECTOR3 (SCREEN_WIDTH * 9 * 0.065f, SCREEN_HEIGHT * 16 * 0.0149f, 0.0f ),
                        D3DXCOLOR ( 1.0f, 1.0f, 1.0f, 1.0f ),
