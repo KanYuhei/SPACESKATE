@@ -613,7 +613,7 @@ void CPlayer::PlayerInput(void)
     if (m_Play != true) return;
 
     //カメラ操作(JoyStick用)
-    D3DXVECTOR3 work;
+    /*D3DXVECTOR3 work;
     work.x = (float)CManager::GetInputJoystick()->GetRightStickDisposition().y;
     work.y = (float)CManager::GetInputJoystick()->GetRightStickDisposition().x;
     work.z = 0.0f;
@@ -622,7 +622,7 @@ void CPlayer::PlayerInput(void)
     {
         CModeGame::GetCamera()->AddAngleY(D3DX_PI * work.y * 0.005f);
         CModeGame::GetCamera()->AddAngleX(D3DX_PI * work.x * 0.005f);
-    }
+    }*/
 
     //カメラベクトル取得
     D3DXVECTOR3 cameraVecDirect = CModeGame::GetCamera()->GetVecDirect();
@@ -633,29 +633,29 @@ void CPlayer::PlayerInput(void)
     D3DXVec3Normalize(&cameraVecRightDirect, &cameraVecRightDirect);
 
     //移動
-    //if (CManager::GetInputKeyboard()->GetKeyPress(DIK_W))  //前
-    //{
-    //    m_Acceleration += cameraVecDirect * 0.8f;
-    //    m_Motion[WAIT]->SetPlay(false);
-    //}
-    //if (CManager::GetInputKeyboard()->GetKeyPress(DIK_S))  //後
-    //{
-    //    m_Acceleration -= cameraVecDirect * 0.8f;
-    //    m_Motion[WAIT]->SetPlay(false);
-    //}
-    //if (CManager::GetInputKeyboard()->GetKeyPress(DIK_D))  //右
-    //{
-    //    m_Acceleration += cameraVecRightDirect * 0.8f;
-    //    m_Motion[WAIT]->SetPlay(false);
-    //}
-    //if (CManager::GetInputKeyboard()->GetKeyPress(DIK_A))  //左
-    //{
-    //    m_Acceleration -= cameraVecRightDirect * 0.8f;
-    //    m_Motion[WAIT]->SetPlay(false);
-    //}
+    if (CManager::GetInputKeyboard()->GetKeyPress(DIK_W))  //前
+    {
+        m_Acceleration += cameraVecDirect * 0.8f;
+        m_Motion[WAIT]->SetPlay(false);
+    }
+    if (CManager::GetInputKeyboard()->GetKeyPress(DIK_S))  //後
+    {
+        m_Acceleration -= cameraVecDirect * 0.8f;
+        m_Motion[WAIT]->SetPlay(false);
+    }
+    if (CManager::GetInputKeyboard()->GetKeyPress(DIK_D))  //右
+    {
+        m_Acceleration += cameraVecRightDirect * 0.8f;
+        m_Motion[WAIT]->SetPlay(false);
+    }
+    if (CManager::GetInputKeyboard()->GetKeyPress(DIK_A))  //左
+    {
+        m_Acceleration -= cameraVecRightDirect * 0.8f;
+        m_Motion[WAIT]->SetPlay(false);
+    }
 
     //移動(JoyStick用)
-    D3DXVECTOR3 work2;
+    /*D3DXVECTOR3 work2;
     work2.x = (float)CManager::GetInputJoystick()->GetLeftStickDisposition().x;
     work2.y = 0.0f;
     work2.z = (float)CManager::GetInputJoystick()->GetLeftStickDisposition().y;
@@ -670,7 +670,7 @@ void CPlayer::PlayerInput(void)
         m_Acceleration += cameraVecRightDirect  * (work2.x * 0.5f * (((m_ItemNum + 1) / 10) + 1));
     }
 
-    if (work2.x != 0 || work2.z != 0) m_Motion[WAIT]->SetPlay(false);
+    if (work2.x != 0 || work2.z != 0) m_Motion[WAIT]->SetPlay(false);*/
 
     //ジャンプ
     if (CManager::GetInputKeyboard()->GetKeyTrigger(DIK_SPACE) ||

@@ -114,10 +114,10 @@ HRESULT CManager::Init ( HINSTANCE hInstance, HWND hWnd, BOOL bWindow )
 
     //ジョイスティック入力クラスの生成と初期化
     m_CInputJoystick = new CInputJoystick;
-    if (FAILED(m_CInputJoystick->Init(hInstance, hWnd)))
+    /*if (FAILED(m_CInputJoystick->Init(hInstance, hWnd)))
     {
         return E_FAIL;
-    }
+    }*/
 
     //サウンドクラスの生成と初期化
     m_Sound = new CSound;
