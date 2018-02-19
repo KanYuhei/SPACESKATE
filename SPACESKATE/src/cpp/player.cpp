@@ -138,7 +138,7 @@ void CPlayer::Update(void)
         m_Cout++;
     if (m_Cout > 50 && m_Cout <= 150)
     {
-        CModeGame::GetCamera() ->AddLength(1.5f);
+        CModeGame::GetCamera()->AddLength(1.5f);
         CModeGame::GetCamera()->AddAngleY(D3DX_PI * 0.01f);
         CModeGame::GetCamera()->AddAngleX(D3DX_PI * 0.0015f);
     }
@@ -671,7 +671,7 @@ void CPlayer::PlayerRanking(void)
         D3DXVECTOR3 CheckPointStart = CModeGame::GetTrack()->GetCheckPointStart(i); //始点
         D3DXVECTOR3 CheckPointEnd = CModeGame::GetTrack()->GetCheckPointEnd(i);     //終点
 
-                                                                                    //チェックポイントからの距離を計算
+        //チェックポイントからの距離を計算
         float Player1length = D3DXVec3Length(&(NearPosOnLine(m_Pos, CheckPointStart, CheckPointEnd) - m_Pos));
         float Player2length = D3DXVec3Length(&(NearPosOnLine(CModeGame::GetPlayer2()->GetPos(), CheckPointStart, CheckPointEnd) - CModeGame::GetPlayer2()->GetPos()));
 
@@ -703,7 +703,7 @@ void CPlayer::PlayerRanking(void)
             D3DXVECTOR3 CheckPointStart = CModeGame::GetTrack()->GetCheckPointStart(m_PassingCheckPoint + 1); //始点
             D3DXVECTOR3 CheckPointEnd = CModeGame::GetTrack()->GetCheckPointEnd(m_PassingCheckPoint + 1);     //終点
 
-                                                                                                              //チェックポイントからの距離を計算
+            //チェックポイントからの距離を計算
             float Player1length = D3DXVec3Length(&(NearPosOnLine(m_Pos, CheckPointStart, CheckPointEnd) - m_Pos));
             float Player2length = D3DXVec3Length(&(NearPosOnLine(CModeGame::GetPlayer2()->GetPos(), CheckPointStart, CheckPointEnd) - CModeGame::GetPlayer2()->GetPos()));
 

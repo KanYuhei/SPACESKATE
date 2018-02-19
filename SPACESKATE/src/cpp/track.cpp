@@ -192,22 +192,24 @@ void CTrack::Update(void)
     //シーンモデルクラスの更新処理
     CSceneModel::Update();
 
-    //エフェクト処理
-    EMITTER Emitter;
-    Emitter.Pos = D3DXVECTOR3(0.0f, 0.0f, 2300.0f + (float)(rand() % 1000));
-    Emitter.Speed = D3DXVECTOR3(0.0f, 0.6f, 0.0f);
-    Emitter.Acceleration = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-    Emitter.Size = D3DXVECTOR2(10.0f, 10.0f);
-    Emitter.Color = D3DXCOLOR(0.2f, 0.2f, 1.0f, 0.7f);
-    Emitter.nLife = 30;
-    Emitter.nNum = 5;
-
     //前回の座標と違う場合
-    if (m_EmitterCount == 3)
+    if (m_EmitterCount == 3 && CModeGame::GetParticle() != NULL)
     {
-        /*CEmitter *emitter = new CEmitter;
-        emitter->EmitParticle(&Emitter, CModeGame::GetParticle()->Get());
-        m_EmitterCount = 0;*/
+        for (int i = 0; i < 10; i++)
+        {
+            //エフェクト処理
+            EMITTER Emitter;
+            Emitter.Pos = D3DXVECTOR3(0.0f, 0.0f, 2300.0f + (float)(rand() % 1000));
+            Emitter.Speed = D3DXVECTOR3(0.0f, 0.6f, 0.0f);
+            Emitter.Acceleration = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
+            Emitter.Size = D3DXVECTOR2(10.0f, 10.0f);
+            Emitter.Color = D3DXCOLOR(0.2f, 0.2f, 1.0f, 0.7f);
+            Emitter.nLife = 50;
+            Emitter.nNum = 1;
+            CEmitter *emitter = new CEmitter;
+            emitter->EmitParticle(&Emitter, CModeGame::GetParticle()->Get());
+        }
+        m_EmitterCount = 0;
     }
     m_EmitterCount++;
 }
@@ -226,7 +228,7 @@ void CTrack::Draw(void)
 //*************************************************************************************************
 CTrack *CTrack::Create(D3DXVECTOR3 Pos, D3DXVECTOR3 Scl, int nPriority)
 {
-    CTrack *pScenePlayer;                         //シーン２Dクラスのポインタ
+    CTrack *pScenePlayer;       //トラッククラスのポインタ
 
     //動的確保
     pScenePlayer = new CTrack(nPriority);
