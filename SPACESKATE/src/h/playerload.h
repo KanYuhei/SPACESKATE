@@ -14,8 +14,6 @@
 //*************************************************************************************************
 // マクロ定義 
 //*************************************************************************************************
-#define PART_MAX_NUM        (10)                //パーツの最大数
-#define MOTION_BLEND_FRAME  (30.0f)             //モーションブレンドフレーム数
 
 //*************************************************************************************************
 // 構造体
@@ -27,6 +25,7 @@
 class CParts;
 class CKey;
 class CKeyFrame;
+class CMotion;
 
 //*************************************************************************************************
 // クラス
@@ -38,6 +37,9 @@ public:
     HRESULT Load(int i);                        //読み込み処理
     void Unload(void);                          //解放処理
 
+    std::vector<CParts*> GetParts(void);        //パーツ情報の取得
+    std::vector<CMotion*> GetMotions(void);     //モーション情報の取得
+
 private:
     void DeleteHeadSpace(std::string &buf);
     void SetValue(std::string str, int *value);
@@ -45,17 +47,8 @@ private:
     void SetKey(std::vector<std::string>::const_iterator it, CKey *key);
     void SetKeyFrame(std::vector<std::string>::const_iterator it, CKeyFrame *keyframe, int numPart);
 
-    std::vector<std::string> m_filname;         //読み込むモデル名のリスト
-    int m_ModelNum;                             //モデル数
-    std::vector<CParts> m_Parts;                //パーツ情報
-    int m_NumParts;                             //パーツ数
-    std::vector<int> m_Index;                   //インデックス
-    std::vector<int> m_Parent;                  //親子
-    std::vector<D3DXVECTOR3> m_position;        //座標
-    std::vector<D3DXVECTOR3> m_rotation;        //回転
-    std::vector<int> m_Loop;                    //ループするかどうか[0:しない / 1:する]
-    std::vector<int> m_NumKey;                  //キー数
-    std::vector<CKeyFrame> m_keyFrame;          //キーフレームクラス
+    std::vector<CParts*> m_Part;                //パーツ情報
+    std::vector<CMotion*> m_Motion;             //モーション情報
 };
 
 //*************************************************************************************************

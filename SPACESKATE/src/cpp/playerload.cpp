@@ -21,6 +21,11 @@
 //*************************************************************************************************
 
 //*************************************************************************************************
+// 名前空間
+//*************************************************************************************************
+using namespace std;
+
+//*************************************************************************************************
 // クラス
 //*************************************************************************************************
 
@@ -41,10 +46,10 @@ HRESULT CPlayerLoad::Load(int i)
     LPDIRECT3DDEVICE9 pDevice = CRenderer::GetDevice();
 
     // ファイルの読み込み
-    std::string file;
+    string file;
     if (i == 1) file = "data/TEXT/motion.txt";
     else if (i == 2) file = "data/TEXT/motion2.txt";
-    std::ifstream ifs(file);
+    ifstream ifs(file);
     if (ifs.fail())
     {
         MessageBox(NULL, "プレイヤーモーションテキストの読み込みに失敗しました", "終了メッセージ", MB_OK);
@@ -52,9 +57,9 @@ HRESULT CPlayerLoad::Load(int i)
     }
 
     //ファイルから文字列を読み込み
-    std::string str;                         //作業用文字列
-    std::string::size_type commentStart = 0; //コメント開始位置
-    std::vector<std::string> m_loadStr;      //読み込んだ文字列
+    string str;                             //作業用文字列
+    string::size_type commentStart = 0;     //コメント開始位置
+    vector<std::string> loadStr;            //読み込んだ文字列
     while (getline(ifs, str))
     {
         // '#'以降はコメントとして無視
@@ -67,34 +72,46 @@ HRESULT CPlayerLoad::Load(int i)
         // 空行は無視
         if (str.empty()) continue;
 
-        m_loadStr.push_back(str);
+        loadStr.push_back(str);
     }
     ifs.close();
 
     //ファイル文字列解析
-    for (std::vector<std::string>::const_iterator it = m_loadStr.begin(); it != m_loadStr.end(); it++)
+    vector<string> filname;                 //読み込むモデル名のリスト
+    int ModelNum = 0;                       //モデル数
+    vector<CParts> Parts;                   //パーツ情報
+    int NumParts = 0;                       //パーツ数
+    vector<int> Index;                      //インデックス
+    vector<int> Parent;                     //親子
+    vector<D3DXVECTOR3> position;           //座標
+    vector<D3DXVECTOR3> rotation;           //回転
+    vector<int> Loop;                       //ループするかどうか[0:しない / 1:する]
+    vector<int> NumKey;                     //キー数
+    vector<CKeyFrame> keyFrame;             //キーフレームクラス
+    int MotionNum = 0;                      //モーションの数
+    for (vector<string>::const_iterator it = loadStr.begin(); it != loadStr.end(); it++)
     {
         //NUM_MODELが見つかった場合
-        if (it->find("NUM_MODEL") != -1) SetValue(it->c_str(), &m_ModelNum);
+        if (it->find("NUM_MODEL") != -1) SetValue(it->c_str(), &ModelNum);
 
         //MODEL_FILENAMEが見つかった場合
         if (it->find("MODEL_FILENAME") != -1)
         {
             int start = it->find("data");
             int end = it->length();
-            m_filname.push_back(it->substr(start, end - start));
+            filname.push_back(it->substr(start, end - start));
         }
 
         //キャラクター情報///////////////////////////////////////////
         //NUM_PARTSが見つかった場合
-        if (it->find("NUM_PARTS") != -1) SetValue(it->c_str(), &m_NumParts);
+        if (it->find("NUM_PARTS") != -1) SetValue(it->c_str(), &NumParts);
 
         //INDEXが見つかった場合
         if (it->find("INDEX") != -1)
         {
             int index;
             SetValue(it->c_str(), &index);
-            m_Index.push_back(index);
+            Index.push_back(index);
         }
 
         //PARENTが見つかった場合
@@ -102,7 +119,7 @@ HRESULT CPlayerLoad::Load(int i)
         {
             int parent;
             SetValue(it->c_str(), &parent);
-            m_Parent.push_back(parent);
+            Parent.push_back(parent);
         }
 
         //POSが見つかった場合
@@ -110,7 +127,7 @@ HRESULT CPlayerLoad::Load(int i)
         {
             D3DXVECTOR3 Pos;
             SetXYZ(it->c_str(), &Pos);
-            m_position.push_back(Pos);
+            position.push_back(Pos);
         }
 
         //ROTが見つかった場合
@@ -118,7 +135,7 @@ HRESULT CPlayerLoad::Load(int i)
         {
             D3DXVECTOR3 Rot;
             SetXYZ(it->c_str(), &Rot);
-            m_rotation.push_back(Rot);
+            rotation.push_back(Rot);
         }
 
         //モーション情報/////////////////////////////////////////////
@@ -127,7 +144,8 @@ HRESULT CPlayerLoad::Load(int i)
         {
             int loop;
             SetValue(it->c_str(), &loop);
-            m_Loop.push_back(loop);
+            Loop.push_back(loop);
+            MotionNum++;
         }
 
         //NUM_KEYが見つかった場合
@@ -135,16 +153,41 @@ HRESULT CPlayerLoad::Load(int i)
         {
             int num_key;
             SetValue(it->c_str(), &num_key);
-            m_NumKey.push_back(num_key);
+            NumKey.push_back(num_key);
         }
 
         //KEYSETが見つかった場合
         if (it->find("KEYSET") != -1 && it->find("END_KEYSET") == -1)
         {
             CKeyFrame keyframe;
-            SetKeyFrame(it, &keyframe, m_NumParts);
-            m_keyFrame.push_back(keyframe);
+            SetKeyFrame(it, &keyframe, NumParts);
+            keyFrame.push_back(keyframe);
         }
+    }
+
+    // パーツの作成
+    for (int nCntPart = 0; nCntPart < NumParts; nCntPart++)
+    {
+        CParts *part = nullptr;
+        if (Parent[nCntPart] == -1)     //(親)NULL
+            part = CParts::Create(filname[nCntPart].c_str(), position[nCntPart], rotation[nCntPart], NULL);
+        else                            //(子)
+            part = CParts::Create(filname[nCntPart].c_str(), position[nCntPart], rotation[nCntPart], m_Part[Parent[nCntPart]]);
+        m_Part.push_back(part);
+    }
+
+    // モーションの作成
+    int num = 0;
+    for (int nCntMotion = 0; nCntMotion < MotionNum; nCntMotion++)
+    {
+        vector<CKeyFrame> keyframe;
+        for (int i = 0; i < NumKey[nCntMotion]; i++)
+        {
+            keyframe.push_back(keyFrame[num]);
+            num++;
+        }
+        CMotion *motion = CMotion::Create(keyframe, NumKey[nCntMotion], Loop[nCntMotion]);
+        m_Motion.push_back(motion);
     }
 
     return S_OK;
@@ -155,6 +198,22 @@ HRESULT CPlayerLoad::Load(int i)
 //*************************************************************************************************
 void CPlayerLoad::Unload(void)
 {
+}
+
+//*************************************************************************************************
+// パーツ情報の取得
+//*************************************************************************************************
+std::vector<CParts*> CPlayerLoad::GetParts(void)
+{
+    return m_Part;
+}
+
+//*************************************************************************************************
+// モーション情報の取得
+//*************************************************************************************************
+std::vector<CMotion*> CPlayerLoad::GetMotions(void)
+{
+    return m_Motion;
 }
 
 //*************************************************************************************************
