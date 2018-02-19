@@ -10,6 +10,7 @@
 //*************************************************************************************************
 #include <vector>
 #include "parts.h"
+#include "motion.h"
 
 //*************************************************************************************************
 // マクロ定義 
@@ -20,35 +21,10 @@
 //*************************************************************************************************
 // 構造体
 //*************************************************************************************************
-//キー情報（１パーツ）
-struct KEY
-{
-    D3DXVECTOR3 Position;                           //座標
-    D3DXVECTOR3 Rotation;                           //回転
-};
-
-//キーフレーム情報
-struct KEY_FRAME
-{
-    int Frame;                                      //フレーム数
-    KEY Key[PART_MAX_NUM];                          //キー情報
-};
-
-//モーション情報
-struct MOTION
-{
-    std::vector<KEY_FRAME> KeyFrame;                //キーフレーム情報
-    bool Play;                                      //再生(ON:true,OFF:false)
-    float Frame;                                    //現在のフレーム数
-    int Key;                                        //現在のキー
-    int Key_Max;                                    //キーの数
-    bool Loop;                                      //ループするかどうか
-};
 
 //*************************************************************************************************
 // 前方宣言
 //*************************************************************************************************
-class CParts;
 
 //*************************************************************************************************
 // クラス
@@ -79,7 +55,8 @@ public:
                              D3DXVECTOR3 Scl,
                              int nPriority = 3 );   //自身を生成
 
-    MOTION GetMotion(int i);                        //モーションの取得
+    CParts *GetPart(int i);                         //パーツの取得
+    CMotion *GetMotion(int i);                      //モーションの取得
     bool GetHalfGoal(void);                         //半分までゴールフラグ取得
     int GetPassingCheckPoint(void);                 //通過したチェックポイントの取得
     D3DXVECTOR3 GetPosUp(void);                     //最上座標の取得
@@ -89,11 +66,18 @@ private:
     D3DXVECTOR3 NearPosOnLine(D3DXVECTOR3 P, 
                               D3DXVECTOR3 A, 
                               D3DXVECTOR3 B);       //点Pと直線ABから線上最近点を求める
+    void PlayerInput(void);                         //プレイヤー入力処理
+    void PlayerMove(void);                          //プレイヤー移動処理
+    void PlayerStateUpdate(void);                   //プレイヤー状態更新
+    void PlayerMotion(void);                        //プレイヤーモーション処理
+    void PlayerRanking(void);                       //プレイヤーランキング処理
+    void PlayerToTrackColision(void);               //プレイヤーとトラックの衝突処理
+    void PlayerToItemColision(void);                //プレイヤーとアイテムの衝突処理
+    void PlayerNetwork(void);                       //プレイヤーネットワーク処理
 
-    CParts m_Part[PART_MAX_NUM];                    //パーツ情報
-    MOTION m_Motion[STATE_MAX];                     //モーション情報
-    MOTION m_BlendMotion;                           //モーション情報（ブレンド用）
-    float m_MotionBlendFrame;                       //モーションブレンドフレーム
+    std::vector<CParts*> m_Part;                    //パーツ情報
+    CMotion *m_Motion[STATE_MAX];                   //モーション情報
+    CMotion m_BlendMotion;                          //モーション情報（ブレンド用）
     static int m_ID;                                //プレイヤーID
     D3DXVECTOR3 m_Move;                             //移動量(速度)
     D3DXVECTOR3 m_Acceleration;                     //加速度
@@ -114,4 +98,4 @@ private:
 // プロトタイプ宣言
 //*************************************************************************************************
 
-#endif //_PLAYER_H_
+#endif //_PLAYER_H_\/

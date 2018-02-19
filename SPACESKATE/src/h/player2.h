@@ -47,7 +47,7 @@ public:
                             D3DXVECTOR3 Scl,
                             int nPriority = 3);     //自身を生成
 
-    MOTION *GetMotion(int i);                       //モーションの取得
+    CMotion *GetMotion(int i);                      //モーションの取得
     bool GetHalfGoal(void);                         //半分までゴールフラグ取得
     int GetPassingCheckPoint(void);                 //通過したチェックポイントの取得
 
@@ -56,9 +56,14 @@ public:
     void SetGoal(bool Goal);                        //ゴールフラグの設定
 
 private:
-    PART m_Part[PART_MAX_NUM];                      //パーツ情報
-    MOTION m_Motion[STATE_MAX];                     //モーション情報
-    MOTION m_BlendMotion;                           //モーション情報（ブレンド用）
+    void PlayerStateUpdate(void);                   //プレイヤー状態更新
+    void PlayerMotion(void);                        //プレイヤーモーション処理
+    void PlayerToTrackColision(void);               //プレイヤーとトラックの衝突処理
+    void PlayerToItemColision(void);                //プレイヤーとアイテムの衝突処理
+
+    std::vector<CParts*> m_Part;                    //パーツ情報
+    CMotion *m_Motion[STATE_MAX];                   //モーション情報
+    CMotion m_BlendMotion;                          //モーション情報（ブレンド用）
     float m_MotionBlendFrame;                       //モーションブレンドフレーム
     static int m_ID;                                //プレイヤー2ID
     D3DXVECTOR3 m_Move;                             //移動量

@@ -167,7 +167,7 @@ unsigned __stdcall CSocket::ReceiveThread( LPVOID Param )
                 {
                     if (m_InitID == false)
                     {
-                        //m_ID = data.ID;
+                        m_ID = data.ID;
                         m_InitID = true;
                     }
                     break;
@@ -182,7 +182,7 @@ unsigned __stdcall CSocket::ReceiveThread( LPVOID Param )
                         if (data.Event.Type == DATA_EVENT_TYPE_START)
                         {
                             //タイトルBGMを停止する
-                            //CManager::GetSound()->Stop(CSound::SOUND_LABEL_BGM_TITLE);
+                            CManager::GetSound()->Stop(CSound::SOUND_LABEL_BGM_TITLE);
 
                             //ゲーム進行フラグ
                             CModeTitle::SetGame();
@@ -248,10 +248,10 @@ unsigned __stdcall CSocket::ReceiveThread( LPVOID Param )
 
                         if (player2)
                         {
-                            player2->GetMotion(CPlayer2::WAIT)->Play = data.Motion.WaitPlay;
-                            player2->GetMotion(CPlayer2::WALK)->Play = data.Motion.WalkPlay;
-                            player2->GetMotion(CPlayer2::RUN)->Play = data.Motion.RunPlay;
-                            player2->GetMotion(CPlayer2::PUNTCH)->Play = data.Motion.PuntchPlay;
+                            player2->GetMotion(CPlayer2::WAIT)->SetPlay(data.Motion.WaitPlay);
+                            player2->GetMotion(CPlayer2::WALK)->SetPlay(data.Motion.WalkPlay);
+                            player2->GetMotion(CPlayer2::RUN)->SetPlay(data.Motion.RunPlay);
+                            player2->GetMotion(CPlayer2::PUNTCH)->SetPlay(data.Motion.PuntchPlay);
                         }
                     }
                     break;

@@ -119,7 +119,7 @@ HRESULT CManager::Init ( HINSTANCE hInstance, HWND hWnd, BOOL bWindow )
         return E_FAIL;
     }
 
-    //Xactクラスの生成と初期化
+    //サウンドクラスの生成と初期化
     m_Sound = new CSound;
     if ( FAILED (m_Sound->Init ( hWnd ) ) )
     {
@@ -357,6 +357,7 @@ int CManager::GetPlayerTime(int Player)
 {
     if (Player == 1) return Player1Time;
     if (Player == 2) return Player2Time;
+    return 0;
 }
 
 //*************************************************************************************************

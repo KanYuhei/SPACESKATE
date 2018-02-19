@@ -282,6 +282,15 @@
     <ClCompile Include="src\cpp\parts.cpp">
       <Filter>ソース ファイル\Utility\Motion</Filter>
     </ClCompile>
+    <ClCompile Include="src\cpp\motion.cpp">
+      <Filter>ソース ファイル\Utility\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\key.cpp">
+      <Filter>ソース ファイル\Utility\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\keyFrame.cpp">
+      <Filter>ソース ファイル\Utility\Motion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\h\particle.h">
@@ -419,6 +428,15 @@
     <ClInclude Include="src\h\scene.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="src\h\motion.h">
+      <Filter>ヘッダー ファイル\Utility\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\h\key.h">
+      <Filter>ヘッダー ファイル\Utility\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\h\keyFrame.h">
+      <Filter>ヘッダー ファイル\Utility\Motion</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Media Include="data\SOUND\BGM\game.wav">
@@ -457,6 +475,9 @@
       <Filter>リソース ファイル\TEXT</Filter>
     </Text>
     <Text Include="data\TEXT\motionAKR.txt">
+      <Filter>リソース ファイル\TEXT</Filter>
+    </Text>
+    <Text Include="data\TEXT\motion2.txt">
       <Filter>リソース ファイル\TEXT</Filter>
     </Text>
   </ItemGroup>

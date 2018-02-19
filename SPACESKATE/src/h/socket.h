@@ -28,7 +28,7 @@
 //*************************************************************************************************
 #define CLIENT_TO_SERVER_PORT 20000             //クライアントからサーバーへ
 #define SERVER_TO_CLIENT_PORT 20001             //サーバーからクライアントへ
-#define IP           "172.29.17.119"                //IPアドレス
+#define IP           "172.29.25.48"            //IPアドレス
 #define MULTICAST_IP "225.0.0.2"                //マルチキャストIPアドレス
 #define MESSAGE_SIZE 256                        //送受信バッファサイズ
 #define MAX_PLAYER 2                            //プレイヤーの最大数

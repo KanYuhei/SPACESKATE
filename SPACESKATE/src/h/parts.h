@@ -8,6 +8,7 @@
 //*************************************************************************************************
 // インクルードファイル
 //*************************************************************************************************
+#include <string>
 
 //*************************************************************************************************
 // マクロ定義 
@@ -31,13 +32,27 @@ public:
     HRESULT Init(void);                             //初期化処理
     void Uninit(void);                              //終了処理
 
-    CParts *Create(char fileName[256],
-                   D3DXVECTOR3 pos,
-                   D3DXVECTOR3 rot,
-                   CParts *parent);                //自身を生成
+    void SetMatrix(D3DXMATRIX matrix);              //マトリクスの設定
+
+    D3DXMATRIX GetMatrix(void);                     //マトリクスの取得
+    D3DXVECTOR3 GetPos(void);                       //座標の取得
+    D3DXVECTOR3 GetRot(void);                       //回転の取得
+    CParts *GetParent(void);                        //親子構造の取得
+    LPD3DXMESH GetMesh(void);                       //メッシュ情報の取得
+    LPD3DXBUFFER GetBuffMat(void);                  //マテリアル情報の取得
+    DWORD GetNumMat(void);                          //マテリアル情報の数取得
+    LPDIRECT3DTEXTURE9 GetTexture(int num);         //テクスチャポインタの取得
+
+    void SetPos(D3DXVECTOR3 pos);                   //座標の設定
+    void SetRot(D3DXVECTOR3 rot);                   //回転の設定
+
+    static CParts *Create(std::string fileName,
+                          D3DXVECTOR3 pos,
+                          D3DXVECTOR3 rot,
+                          CParts *parent);          //自身を生成
 
 private:
-    char m_FileName[256];                           //ファイル名
+    std::string m_FileName;                         //ファイル名
     LPD3DXMESH m_Mesh;                              //メッシュ情報インターフェース
     LPD3DXBUFFER m_BuffMat;                         //マテリアル情報
     DWORD m_NumMat;                                 //マテリアル情報の数

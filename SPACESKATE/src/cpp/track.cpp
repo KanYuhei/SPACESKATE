@@ -146,27 +146,27 @@ HRESULT CTrack::Init(void)
             MessageBox(NULL, "モデルの読み込みに失敗しました", "終了メッセージ", MB_OK);
             return E_FAIL;
         }
+
+        int Cnt = 0;
+        nNumVertex = pMesh->GetNumVertices();
+
+        //  メッシュから頂点情報を取得
+        pMesh->LockVertexBuffer(0, (void**)&pVtx);
+
+        //  頂点数分のループ
+        for (int nCntVtx = 0; nCntVtx < nNumVertex; nCntVtx += 4, Cnt++, pVtx++)
+        {
+            //チェックポイント初期化
+            m_CheckPointStart[Cnt] = pVtx->pos;
+            pVtx++;
+            pVtx++;
+            pVtx++;
+            m_CheckPointEnd[Cnt] = pVtx->pos;
+        }
+
+        //  頂点バッファのアンロック
+        pMesh->UnlockVertexBuffer();
     }
-
-    int Cnt = 0;
-    nNumVertex = pMesh->GetNumVertices();
-
-    //  メッシュから頂点情報を取得
-    pMesh->LockVertexBuffer(0, (void**)&pVtx);
-
-    //  頂点数分のループ
-    for (int nCntVtx = 0; nCntVtx < nNumVertex; nCntVtx+=4, Cnt++, pVtx++)
-    {
-        //チェックポイント初期化
-        m_CheckPointStart[Cnt]  = pVtx->pos;
-        pVtx++;
-        pVtx++;
-        pVtx++;
-        m_CheckPointEnd[Cnt] = pVtx->pos;
-    }
-
-    //  頂点バッファのアンロック
-    pMesh->UnlockVertexBuffer();
 
     //ゴール
     m_CheckPointStart[CHECKPOINT_NUM-1] = D3DXVECTOR3(0.0f, 41.0f, 3300.0f);

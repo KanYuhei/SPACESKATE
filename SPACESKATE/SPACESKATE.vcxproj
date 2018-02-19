@@ -167,7 +167,9 @@
     <ClCompile Include="src\cpp\input.cpp" />
     <ClCompile Include="src\cpp\item.cpp" />
     <ClCompile Include="src\cpp\joystick.cpp" />
+    <ClCompile Include="src\cpp\key.cpp" />
     <ClCompile Include="src\cpp\keyboard.cpp" />
+    <ClCompile Include="src\cpp\keyFrame.cpp" />
     <ClCompile Include="src\cpp\light.cpp" />
     <ClCompile Include="src\cpp\line3D.cpp" />
     <ClCompile Include="src\cpp\main.cpp" />
@@ -182,6 +184,7 @@
     <ClCompile Include="src\cpp\modeResult.cpp" />
     <ClCompile Include="src\cpp\modeTitle.cpp" />
     <ClCompile Include="src\cpp\monitor.cpp" />
+    <ClCompile Include="src\cpp\motion.cpp" />
     <ClCompile Include="src\cpp\mouse.cpp" />
     <ClCompile Include="src\cpp\number.cpp" />
     <ClCompile Include="src\cpp\obb.cpp" />
@@ -214,7 +217,9 @@
     <ClInclude Include="src\h\input.h" />
     <ClInclude Include="src\h\item.h" />
     <ClInclude Include="src\h\joystick.h" />
+    <ClInclude Include="src\h\key.h" />
     <ClInclude Include="src\h\keyboard.h" />
+    <ClInclude Include="src\h\keyFrame.h" />
     <ClInclude Include="src\h\light.h" />
     <ClInclude Include="src\h\line3D.h" />
     <ClInclude Include="src\h\main.h" />
@@ -229,6 +234,7 @@
     <ClInclude Include="src\h\modeResult.h" />
     <ClInclude Include="src\h\modeTitle.h" />
     <ClInclude Include="src\h\monitor.h" />
+    <ClInclude Include="src\h\motion.h" />
     <ClInclude Include="src\h\mouse.h" />
     <ClInclude Include="src\h\number.h" />
     <ClInclude Include="src\h\obb.h" />
@@ -264,6 +270,7 @@
     <Text Include="data\TEXT\item.txt" />
     <Text Include="data\TEXT\model.txt" />
     <Text Include="data\TEXT\motion.txt" />
+    <Text Include="data\TEXT\motion2.txt" />
     <Text Include="data\TEXT\motionAKR.txt" />
   </ItemGroup>
   <ItemGroup>

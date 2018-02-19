@@ -30,11 +30,11 @@ CSound::SOUNDPARAM CSound::m_Param[SOUND_LABEL_MAX] =
     { "data/SOUND/BGM/title.wav", -1 },                 //タイトルBGM
     { "data/SOUND/BGM/game.wav", -1 },                  //ゲームBGM
     { "data/SOUND/BGM/result.wav", -1 },                //リザルトBGM
-    { "data/SOUND/BGM/boss.wav", -1 },                  //ボスBGM
-    { "data/SOUND/SE/start.wav", 0 },                   //スタート音
-    { "data/SOUND/SE/cursor.wav", 0 },                  //セレクト音
-    { "data/SOUND/SE/cancel.wav", 0 },                  //キャンセル音
-    { "data/SOUND/SE/pause_open.wav", 0 }               //ポーズ開始音
+    { "data/SOUND/SE/enter.wav", 0 },                   //決定音SE
+    { "data/SOUND/SE/coutdawn.wav", 0 },                //カウントダウン
+    { "data/SOUND/SE/start.wav", 0 },                   //スタート
+    { "data/SOUND/SE/item.wav", 0 },                    //アイテム
+    { "data/SOUND/SE/goal.wav", 0 }                     //ゴール
 };
 
 //*************************************************************************************************

@@ -13,7 +13,6 @@
 //*************************************************************************************************
 // マクロ定義 
 //*************************************************************************************************
-#define TEXTURENAME00 "data/TEXTURE/GAME/skybox003.jpg"                                  //読み込むテクスチャの名前
 #define TEXTURENAME01 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/frontImage.png"    //読み込むテクスチャの名前
 #define TEXTURENAME02 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/leftImage.png"     //読み込むテクスチャの名前
 #define TEXTURENAME03 "data/TEXTURE/GAME/skyBox/skybox_BlueWithPlanet/backImage.png"     //読み込むテクスチャの名前
@@ -75,13 +74,12 @@ HRESULT CMeshBox::Init(void)
         }
 
         // テクスチャの生成
-        if (FAILED(D3DXCreateTextureFromFile(pDevice, TEXTURENAME00, &m_pTexture[0] )
-                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME01, &m_pTexture[1] )
-                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME02, &m_pTexture[2])
-                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME03, &m_pTexture[3])
-                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME04, &m_pTexture[4])
-                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME05, &m_pTexture[5])
-                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME06, &m_pTexture[6])
+        if (FAILED(D3DXCreateTextureFromFile(pDevice, TEXTURENAME01, &m_pTexture[0])
+                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME02, &m_pTexture[1])
+                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME03, &m_pTexture[2])
+                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME04, &m_pTexture[3])
+                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME05, &m_pTexture[4])
+                || D3DXCreateTextureFromFile(pDevice, TEXTURENAME06, &m_pTexture[5])
            ))
         {
             MessageBox(NULL, "テクスチャの読み込みに失敗しました", "終了メッセージ", MB_OK);
@@ -344,7 +342,7 @@ void CMeshBox::Draw(void)
         for (int i = 0; i < 6; i++)
         {
             //テクスチャの設定
-            pDevice->SetTexture(0, m_pTexture[i+1]);
+            pDevice->SetTexture(0, m_pTexture[i]);
 
             // ポリゴンの描画
             pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP,   //プリッミティブの種類

@@ -8,6 +8,8 @@
 //*************************************************************************************************
 // インクルードファイル
 //*************************************************************************************************
+#include <vector>
+#include <string>
 
 //*************************************************************************************************
 // マクロ定義 
@@ -20,16 +22,40 @@
 //*************************************************************************************************
 
 //*************************************************************************************************
+// 前方宣言
+//*************************************************************************************************
+class CParts;
+class CKey;
+class CKeyFrame;
+
+//*************************************************************************************************
 // クラス
 //*************************************************************************************************
 //プレイヤークラス
 class CPlayerLoad
 {
 public:
-    HRESULT Load(void);         //読み込み処理
-    void Unload(void);          //解放処理
+    HRESULT Load(int i);                        //読み込み処理
+    void Unload(void);                          //解放処理
 
 private:
+    void DeleteHeadSpace(std::string &buf);
+    void SetValue(std::string str, int *value);
+    void SetXYZ(std::string str, D3DXVECTOR3 *pos);
+    void SetKey(std::vector<std::string>::const_iterator it, CKey *key);
+    void SetKeyFrame(std::vector<std::string>::const_iterator it, CKeyFrame *keyframe, int numPart);
+
+    std::vector<std::string> m_filname;         //読み込むモデル名のリスト
+    int m_ModelNum;                             //モデル数
+    std::vector<CParts> m_Parts;                //パーツ情報
+    int m_NumParts;                             //パーツ数
+    std::vector<int> m_Index;                   //インデックス
+    std::vector<int> m_Parent;                  //親子
+    std::vector<D3DXVECTOR3> m_position;        //座標
+    std::vector<D3DXVECTOR3> m_rotation;        //回転
+    std::vector<int> m_Loop;                    //ループするかどうか[0:しない / 1:する]
+    std::vector<int> m_NumKey;                  //キー数
+    std::vector<CKeyFrame> m_keyFrame;          //キーフレームクラス
 };
 
 //*************************************************************************************************

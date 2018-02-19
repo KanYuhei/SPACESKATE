@@ -156,8 +156,8 @@ void CModeTitle::Update( void )
     m_Camera->AddAngleY(D3DX_PI * 0.001f);
 
     //モードの設定
-    if ( CManager::GetInputKeyboard ( )->GetKeyTrigger ( DIK_SPACE ) /*|| 
-         CManager::GetInputJoystick ( )->GetJoyTrigger ( CInputJoystick::DIJ_BUTTON, DIJ_CIRCLE)*/ )
+    if ( CManager::GetInputKeyboard ( )->GetKeyTrigger ( DIK_SPACE ) || 
+         CManager::GetInputJoystick ( )->GetJoyTrigger ( CInputJoystick::DIJ_BUTTON, DIJ_CIRCLE) )
     {
         //再生
         CManager::GetSound()->Play(CSound::SOUND_LABEL_SE_ENTER);
